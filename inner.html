@@ -13,16 +13,28 @@
         <div class="row conteudo">
             <div class="col-6 d-flex right">
                 <div class="display d-flex">
-                <h1>Conversor</h1>
-                <input type="number" class="entrada">
-                <button class="botao1">Kelvin --- Celsius</button>
-                <button class="botao2">Celsius --- Kelvin</button>
+                    <h1>Conversor</h1>
+                    <input type="number" class="entrada">
+                    <button class="botao1" onclick="convertion_KC()">Kelvin --- Celsius</button>
+                    <button class="botao2" onclick="convertion_CK()">Celsius --- Kelvin</button>
                 </div>
             </div>
-            <div class="col-6 d-flex left">
-            </div>   
+            <div class="col-6 d-flex flex-column left">
+                <button type="button" class="clear" onclick="clean()"">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+                <div class="view">
+                    <p>...</p>
+                </div>
+                <div class="rodape d-flex flex-column">
+                     <button type="button" class="alternate_dklght" onclick="alternate()">light</button>
+                </div>
+            </div>
         </div>
 
+        <p class="rodape_text">
+            Copywright ® 2023 All rights reserved This 
+            project he has created by João Vitor Da Silva Pinto</p>
 
 
 
@@ -33,17 +45,9 @@
 
 
 
-
-
-
-
-
-
-    </div>
-
-
-
-
+    <script src="code.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
